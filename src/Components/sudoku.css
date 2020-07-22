@@ -81,3 +81,21 @@ option {
     border: 2px solid black;
     border-radius:  8px
 }
+
+.dad-jokes-navlink {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.read-dad-jokes:hover {
+    color: purple;
+}
+
+.em.em-laughing {
+    margin-left: 10px;
+}

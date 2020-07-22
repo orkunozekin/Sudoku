@@ -1,12 +1,15 @@
 import React from 'react';
 import UserContext from '../ContextProvider';
+import { NavLink } from 'react-router-dom';
+import DadJokes from './DadJokes';
+
 
 export default class LandingPage extends React.Component {
 
     static contextType = UserContext;
 
     render() {
-        let handleSubmitPlay = this.context.handleSubmitPlay;
+        let { handleSubmitPlay, handleFetchJokes }  = this.context;
         return (
             <section className="landing-page-wrapper">
                 <h1>Welcome to Sudoku!</h1>
@@ -18,8 +21,12 @@ export default class LandingPage extends React.Component {
                         <option value="Medium">Medium</option>
                         <option value="Hard">Hard</option>
                     </select>
-                        <button className="play-button" type="submit">Play</button>
+                    <button className="play-button" type="submit">Play</button>
                 </form>
+                <NavLink className="dad-jokes-navlink" to="/dadjokes">
+                    <div className="read-dad-jokes">Or Read Some Dad Jokes!</div>
+                    <i className="em em-laughing"/>
+                </NavLink>
             </section>
         )
     }
