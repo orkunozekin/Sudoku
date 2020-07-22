@@ -57,6 +57,8 @@ option {
     flex-direction: column;
     max-width: 50%;
     margin: 50px auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .play-button {

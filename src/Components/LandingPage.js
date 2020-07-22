@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import UserContext from '../ContextProvider';
 
 export default class LandingPage extends React.Component {
@@ -19,9 +18,7 @@ export default class LandingPage extends React.Component {
                         <option value="Medium">Medium</option>
                         <option value="Hard">Hard</option>
                     </select>
-                    {/* <NavLink to="/play"> */}
                         <button className="play-button" type="submit">Play</button>
-                    {/* </NavLink> */}
                 </form>
             </section>
         )
