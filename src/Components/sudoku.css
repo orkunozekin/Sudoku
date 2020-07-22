@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 270px;
+    height: 270px;
+}
+
+.block {
+    border: solid 1px green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    border: solid 1px orange;
+    height: 30px;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
