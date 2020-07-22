@@ -24,7 +24,7 @@ export default class LandingPage extends React.Component {
                     <button className="play-button" type="submit">Play</button>
                 </form>
                 <NavLink className="dad-jokes-navlink" to="/dadjokes">
-                    <div className="read-dad-jokes">Or Read Some Dad Jokes!</div>
+                    <div className="read-dad-jokes">Or Read Some Jokes!</div>
                     <i className="em em-laughing"/>
                 </NavLink>
             </section>

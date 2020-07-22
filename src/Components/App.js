@@ -9,7 +9,8 @@ import DadJokes from './DadJokes';
 class App extends React.Component {
 
   state = {
-    difficulty: null
+    difficulty: null,
+    dadJokes: {}
   }
 
   handleSubmitPlay = ev => {
@@ -22,10 +23,10 @@ class App extends React.Component {
   
   
   handleFetchJokes = () => {
-    return fetch('https://icanhazdadjoke.com/slack', {
+    return fetch('https://icanhazdadjoke.com/', {
       headers: { 
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "User-Agent": "Sudoku (https://github.com/orkunozekin/Sudoku)" 
        }
     })
          .then(res => {
@@ -37,16 +38,20 @@ class App extends React.Component {
              }
          })
          .then((data) => {
-             console.log(data)
+           this.setState({dadJokes: data})
          })
- }
+  }
+  
+
 
   render() {
     return (
       <UserContext.Provider value={{
         handleSubmitPlay: this.handleSubmitPlay,
         difficulty: this.state.difficulty,
-        handleFetchJokes: this.handleFetchJokes
+        handleFetchJokes: this.handleFetchJokes,
+        dadJokes: this.state.dadJokes,
+
       }}>
         <main className="App">
           <Route exact path="/" component={LandingPage} />

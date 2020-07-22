@@ -36,6 +36,15 @@ h3 {
     text-align: center;
 }
 
+button {
+    background-color: darksalmon;
+    color: beige;
+    font-weight: 800;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius:  8px
+}
+
 .select-difficulty {
     margin-bottom: 40px;
     width: 170px;
@@ -63,23 +72,11 @@ option {
 
 .play-button {
     width: 170px;
-    background-color: darksalmon;
-    color: beige;
-    font-weight: 800;
-    font-size: 15px;
-    border: 2px solid black;
-    border-radius:  8px;
 }
 
 .go-back-button {
     margin-left: 40px;
     width: 100px;
-    background-color: darksalmon;
-    color: beige;
-    font-weight: 800;
-    font-size: 15px;
-    border: 2px solid black;
-    border-radius:  8px
 }
 
 .dad-jokes-navlink {
@@ -90,7 +87,11 @@ option {
     align-items: center;
 }
 
-
+.read-dad-jokes {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: #FC0 1px 0 10px;
+}
 
 .read-dad-jokes:hover {
     color: purple;
@@ -98,4 +99,29 @@ option {
 
 .em.em-laughing {
     margin-left: 10px;
+}
+
+/* dad jokes */
+
+.dad-jokes-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.another-joke-btn {
+    margin-right: 15px;
+}
+
+
+.dad-joke {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.em-stuck_out_tongue_closed_eyes {
+    margin-left: 50%;
 }
